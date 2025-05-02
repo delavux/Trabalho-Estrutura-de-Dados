@@ -88,10 +88,10 @@ int main() {
               
                 break;
             case 3:
-                // Código para reorganizar as matriculas que tem
+                // Código para reorganizar as matriculas que tem salvas
                 break;
             case 4:
-                // Código para remover uma matricula existente
+                // Código para remover uma das matriculas existentes
                 break;
             case 5:
                 printf("Saindo do programa...\n");
