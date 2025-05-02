@@ -62,12 +62,12 @@ int main() {
     int opt;
     do { //iniciando o menu do programa
         printf("\nMenu:\n");
-        printf("1- Ver matriculas\n");
+        printf("1- Ver matriculas existentes\n");
         printf("2- Adicionar matricula\n");
         printf("3- Ornizar itens\n");
-        printf("4. Remover matricula\n");
+        printf("4. Remover matriculas existentes\n");
         printf("5. Sair\n");
-        printf("Escolha uma opção: ");
+        printf("Escolha uma das opçôes abaixo: ");
         scanf("%d", &opt);
         int i;
         
@@ -84,20 +84,20 @@ int main() {
 
                 arquivo = fopen(mainFName, "a"); //Abrindo o arquivo em modo append
                 fprintf(arquivo, "%d,%s,%s,%d\n", gerarIndex(mainFName), nome, materia, gerarMatricula()); // Construção da linha
-                fclose(arquivo); //Fechando o arquivo
+                fclose(arquivo); //Fechando o arquivo 
               
                 break;
             case 3:
-                // Código para reorganizar as matriculas
+                // Código para reorganizar as matriculas que tem
                 break;
             case 4:
-                // Código para remover uma matricula
+                // Código para remover uma matricula existente
                 break;
             case 5:
                 printf("Saindo do programa...\n");
                 break;
             default:
-                printf("Opção inválida. Tente novamente.\n");
+                printf("erro. Tente novamente.\n");
         }
     } while (opt != 5);
 
